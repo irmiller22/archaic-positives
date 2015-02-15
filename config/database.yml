@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ap_development
+
+test:
+  <<: *default
+  database: ap_test
+
+production:
+  <<: *default
+  database: ap_production
+  username: archaic-positives
+  password: <%= ENV['ARCHAIC-POSITIVES_DATABASE_PASSWORD'] %>
