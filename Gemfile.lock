@@ -53,6 +53,7 @@ GEM
     coffee-script-source (1.9.0)
     columnize (0.9.0)
     commonjs (0.2.7)
+    daemon_controller (1.2.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
@@ -86,6 +87,10 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    passenger (4.0.59)
+      daemon_controller (>= 1.2.0)
+      rack
+      rake (>= 0.8.1)
     pg (0.18.1)
     rack (1.6.0)
     rack-test (0.6.3)
@@ -183,6 +188,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   less-rails
+  passenger
   pg
   rails (= 4.2.0)
   rails_12factor
