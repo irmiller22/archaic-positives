@@ -5,7 +5,7 @@
         <div class="span12 center">
           <!-- LOGO -->
           <a class="brand pull-left" href="./">
-            <%= image_tag "logo/irm_logo_gradient.png", alt: "IRM", height: "30", width: "30" %>
+            <%= image_tag "https://s3.amazonaws.com/archaic-positives/irm_logo_gradient.png", alt: "IRM", height: "30", width: "30" %>
           </a>
           <!-- END LOGO -->
 
@@ -53,12 +53,12 @@
             <div class="logo">
               <div class="scrollNormal">
                 <a href="#page-work">
-                  <%= image_tag "logo/irm_logo.png", width: "140", height: "140", alt: "IRM" %>
+                  <%= image_tag "https://s3.amazonaws.com/archaic-positives/irm_logo.png", width: "140", height: "140", alt: "IRM" %>
                 </a>
               </div>
               <div class="scrollDown">
                 <a href="#page-work">
-                  <%= image_tag "logo/irm_logo_blue_gradient.png", width: "140", height: "140", alt: "IRM Gradient" %>
+                  <%= image_tag "https://s3.amazonaws.com/archaic-positives/irm_logo_blue_gradient.png", width: "140", height: "140", alt: "IRM Gradient" %>
                 </a>
               </div>
             </div>
@@ -94,50 +94,28 @@
       <div class="container">
           <!-- Header -->
           <header>
-              <h4 class="line-divider">Work</h4>
-              <h1><%= @ian.employer %></h1>
+            <h4 class="line-divider">Work</h4>
+            <!-- Article -->
+            <article>
+              <ul class="thumbnails plugin-filter-elements portfolio-items">
+                <li class="span12 flatiron">
+                    <a href="http://www.flatironschool.com/" target="_blank" data-destination="portfolio-items" data-insert="before">
+                      <%= image_tag "https://s3.amazonaws.com/irm-logo/flatiron_logo.png", alt: "Flatiron" %>
+                    </a>
+                </li>
+              </ul>
+              </article>
+              <!-- End Article -->
               <!-- Short desciption about Work in general -->
               <div class="row work-description">
                 <div class="span8 offset2">
+                  <h2>Instructor, Web Development Immersive</h2>
                   <p>
-                    Initially began as a Junior Developer in the Labs division of Flatiron School, and am now working as an Instructor for the NYC Web Development Fellowship, in partnership with the City of New York.
+                    Initially began as a Junior Developer in the Labs division of Flatiron School, and am now working as an Instructor for the NYC Web Development Immersive program at Flatiron's Manhattan office.
                   </p>
                 </div>
               </div>
 
-          <!-- Article -->
-          <article>
-            <ul class="thumbnails plugin-filter-elements portfolio-items">
-              <li class="span4 flatiron">
-                <a href="https://summer.flatironschool.com/" data-destination="portfolio-items" data-insert="before">
-                    <!-- Portfolio image -->
-                    <%= image_tag "https://s3.amazonaws.com/irm-logo/flatiron_logo.png", alt: "Flatiron" %>
-
-                    <!-- Portfolio name, activated on hover -->
-                    <div class="portfolio-overlay">
-                        <h4>Summer, Flatiron School</h4>
-                    </div>
-                </a>
-              </li>
-              <li class="span4 flatiron">
-                  <a href="http://learn.flatironschool.com/" data-destination="portfolio-items" data-insert="before">
-                      <%= image_tag "https://s3.amazonaws.com/irm-logo/flatiron_logo.png", alt: "Flatiron" %>
-                      <div class="portfolio-overlay">
-                          <h4>Ironboard, Flatiron School</h4>
-                      </div>
-                  </a>
-              </li>
-              <li class="span4 personal">
-                <a href="http://www.gonoted.com/" data-destination="portfolio-items" data-insert="before">
-                    <%= image_tag "https://s3.amazonaws.com/irm-logo/noted_logo.png", width: "300", height: "192", alt: "Noted" %>
-                    <div class="portfolio-overlay">
-                        <h4>Noted</h4>
-                    </div>
-                </a>
-              </li>
-            </ul>
-          </article>
-          <!-- End Article -->
       </div>
   </div>
   <!-- END PAGE | WORK -->
@@ -357,7 +335,7 @@
             </div>
             <div class="media">
               <div class="social-icons sicon-white pull-left">
-                  <a href="mailto:<%= @ian.email_address %>" class="sicon-mail"><i>Email</i></a>
+                <%= link_to "<i>Email</i>".html_safe, "mailto:#{@ian.email_address}", class: "sicon-mail" %>
               </div>
               <div class="media-body smallFontBy08">
                   <%= @ian.email_address %>
