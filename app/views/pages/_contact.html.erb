@@ -1,0 +1,68 @@
+<div class="pages black-bg white page-contact" id="page-contact">
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h4 class="line-divider">Contact</h4>
+        <h1>Say hello!</h1>
+        <div class="row">
+          <div class="span8 offset2">
+            <p>
+              I like to create things with fun, open-minded people. Feel free to say hello! Even if you just want to get to know me or ask questions, I'm always happy to talk.
+            </p>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Article -->
+      <article>
+        <div class="row-fluid">
+
+          <div class="span4 offset2">
+            <h5>Contact Me</h5>
+            <div class="media">
+              <div class="social-icons sicon-white pull-left">
+                <%= link_to '<i>Phone</i>'.html_safe, "tel://1-704-860-4074", class: 'sicon-phone' %>
+              </div>
+              <div class="media-body smallFontBy08">
+                  <%= ian.mobile_number %>
+              </div>
+            </div>
+            <div class="media">
+              <div class="social-icons sicon-white pull-left">
+                <%= link_to "<i>Email</i>".html_safe, "mailto:#{ian.email_address}", class: "sicon-mail" %>
+              </div>
+              <div class="media-body smallFontBy08">
+                  <%= ian.email_address %>
+              </div>
+            </div>
+            <div class="media">
+              <div class="social-icons sicon-white pull-left">
+                <%= link_to '<i>Time Zone</i>'.html_safe, '#', class: "sicon-clock" %>
+              </div>
+              <div class="media-body smallFontBy08">
+                  UTC / GMT -5
+              </div>
+            </div>
+          </div>
+
+          <div class="span4 offset2">
+            <h5>Get Social</h5>
+            <div class="social-icons sicon-white bordered">
+              <%= link_to '<i>Facebook</i>'.html_safe, "http://www.facebook.com/#{ian.facebook}", class: "sicon-facebook" %>
+              <%= link_to '<i>Twitter</i>'.html_safe, "http://www.twitter.com/#{ian.twitter}", class: "sicon-twitter" %>
+              <%= link_to '<i>LinkedIn</i>'.html_safe, "http://www.linkedin.com/in/#{ian.linkedin}", class: "sicon-linkedin" %>
+            </div>
+          </div>
+          <!-- End Contact information -->
+        </div>
+      </article>
+      <!-- End Article -->
+
+    </div>
+
+    <!-- Background map image -->
+    <div id="map-image">
+      <%= image_tag "pages/contact/map_bck.jpg", alt: "Map" %>
+    </div>
+  </div>
