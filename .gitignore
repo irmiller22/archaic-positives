@@ -17,3 +17,6 @@
 
 # Ignore Ian seed file
 db/seeds.rb
+
+# Ignore blog-feature file
+blog-feature.md
