@@ -1,0 +1,45 @@
+<div class="pages white paralax page-welcome" id="page-welcome">
+  <div class="overlay"></div>
+  <!-- Centralized content -->
+  <div class="centralized">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span12 center">
+          <!-- Animated logo -->
+          <div class="logo">
+            <div class="scrollNormal">
+              <a href="#page-work">
+                <%= image_tag "https://s3.amazonaws.com/archaic-positives/irm_logo.png", width: "140", height: "140", alt: "IRM" %>
+              </a>
+            </div>
+            <div class="scrollDown">
+              <a href="#page-work">
+                <%= image_tag "https://s3.amazonaws.com/archaic-positives/irm_logo_blue_gradient.png", width: "140", height: "140", alt: "IRM Gradient" %>
+              </a>
+            </div>
+          </div>
+
+          <div class="line-divider" id="welcome-messages">
+            <ul class="slides">
+              <li>
+                <h1><%= ian.name %></h1>
+              </li>
+              <li>
+                <h1>Tar Heel</h1>
+              </li>
+              <li>
+                <h1>NYC Resident</h1>
+              </li>
+            </ul>
+          </div>
+          <p><%= ian.position %> at <%= ian.employer %></p>
+          <div class="social-icons sicon-white bordered">
+            <%= link_to "<i>Facebook</i>".html_safe, "http://www.facebook.com/#{ian.facebook}", target: "_blank", class: "sicon-facebook" %>
+            <%= link_to "<i>Twitter</i>".html_safe, "http://www.twitter.com/#{ian.twitter}", target: "_blank", class: "sicon-twitter" %>
+            <%= link_to "<i>LinkedIn</i>".html_safe, "http://www.linkedin.com/in/#{ian.linkedin}", target: "_blank", class: "sicon-linkedin" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
