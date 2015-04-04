@@ -11,17 +11,14 @@ This is my (Ian Miller) personal website. It's still a work in progress, but slo
 ### Priority List:
 
   * Blog
+    - Currently namespaced under `blog.flatironschool.com`
     - Figure out how design will be implemented
     - Still working under octopress?
   * Work Details
     - What will serve as images for each work detail?
     - Logos? Project Names?
-  * Interests
-    - Have three area of interests (like on old site)
-    - Favorite quotes (Bruce Feiler, etc)
   * Contact
     - Set up contact form
-    - Equivalent of mailer for sinatra?
 
 ### Feature Pipeline:
   * Instagram Feed
