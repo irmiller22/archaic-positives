@@ -11,16 +11,9 @@ This is my (Ian Miller) personal website. It's still a work in progress, but slo
 ### Priority List:
 
   * Blog
-    - Currently namespaced under `blog.flatironschool.com`
-    - Figure out how design will be implemented
+    - Currently namespaced under `blog.ianmiller.nyc`
     - Still working under octopress?
-  * Work Details
-    - What will serve as images for each work detail?
-    - Logos? Project Names?
-  * Contact
-    - Set up contact form
 
 ### Feature Pipeline:
   * Instagram Feed
-  * Tweet Feed (plugin currently not working)
   * Front-end design implementation for blog
