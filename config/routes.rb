@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'pages#landing'
 
+  post '/test_endpoint', to: 'pages#test_endpoint'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
