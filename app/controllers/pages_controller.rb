@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
   def landing
-    @ian = Owner.find_by(name: "Ian Miller")
+    if Rails.env == 'production'
+      @ian = Owner.find_by(name: "Ian Miller")
+    else
+      @ian = Owner.first
+    end
   end
 end
