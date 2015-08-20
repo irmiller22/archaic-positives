@@ -16,7 +16,7 @@ This is my (Ian Miller) personal website. It's still a work in progress, but slo
 
   * Blog
     - Currently namespaced under `blog.ianmiller.nyc`
-    - Still working under octopress?
+    - Add updater that will add new posts to ianmiller.nyc
 
 ## Feature Pipeline:
   * Instagram Feed
